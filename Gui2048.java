@@ -439,7 +439,7 @@ public class Gui2048 extends Application
             switch(e.getCode()){
             case DOWN:if(board.moveAndAdd(Direction.DOWN)){
 
-            System.out.println("Moving DOWN");
+                System.out.println("Moving DOWN");
             }
 
             // get grid and clear all the nodes in the gridPane

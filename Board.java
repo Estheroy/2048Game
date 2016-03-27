@@ -304,7 +304,7 @@ public class Board
 
     prevGrid = grid;
 
-    if (move(direction)){
+    if(move(direction)){
       addRandomTile();
       return true;
     }
@@ -731,7 +731,8 @@ public class Board
         // check if the tiles in the board can move up, if they can, then move 
         // up
         if(canMoveUp()){
-          result = moveUp();
+          moveUp();
+          result = true;
         }
         break;
       case DOWN:
@@ -739,7 +740,8 @@ public class Board
         // check if the tiles in the board can move down, if they can, then  
         // move down 
         if(canMoveDown()){
-          result = moveDown();
+          moveDown();
+          result = true;
         }
         break;
       case LEFT:
@@ -747,7 +749,8 @@ public class Board
         // check if the tiles in the board can move left, if they can, then      
         // move left
         if(canMoveLeft()){
-          result = moveLeft();
+          moveLeft();
+          result = true;
         }
         break;
       case RIGHT:
@@ -755,7 +758,8 @@ public class Board
         // check if the tiles in the board can move right, if they can, then      
         // move right 
         if(canMoveRight()){
-          result = moveRight();
+          moveRight();
+          result = true;
         }
         break;
     }

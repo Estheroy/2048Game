@@ -1,11 +1,23 @@
 # 2048 Game
 
-####Usage: 
+![alt tag](./img/2048Game.png)
+
+A Java/Javafx clone of the popular 2048 game with new features rotate and undo.
+
+The Game logic flow is written in Java and GUI part is written in Javafx.
+
+# Usage: 
 
 1. Compile all the java files
     ***javac *.java***
 
-2. Run the 2048 Game with Java User Interface
+2. 
+  
+  a) Play the 2048 Game with Java User Interface
+
+    ***java Gui2048 [ -i|-o|-s file]***
+
+  b) Play the 2048 Game with Command Line 
 
     ***java Game2048 [ -i|-o|-s file]***
 
@@ -17,10 +29,24 @@
 
 3. Controls:
 
-   >  **w** - Move Up
+   > **w** - Move Up
+
    > **s** - Move Down
+  
    > **a** - Move Left
+   
    > **d** - Move Right
+   
    > **q** - Quit and Save Board
+   
    > **u** - Undo the Previous Move 
+   
    > **r** - Rotate the Board Clockwise
+
+# Screen Recording
+
+![](./img/2048.gif)
+
+![](./img/2048rotate.gif)
+
+

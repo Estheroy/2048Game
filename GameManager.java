@@ -271,6 +271,8 @@ public class GameManager
     System.out.println("    a - Move Left");
     System.out.println("    d - Move Right");
     System.out.println("    q - Quit and Save Board");
+    System.out.println("    u - undo the previous move");
+    System.out.println("    r - rotate the board clockwise");
     System.out.println();
   }
 }

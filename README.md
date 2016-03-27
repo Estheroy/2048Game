@@ -1,6 +1,6 @@
 ## 2048 Game
 
-<img src="./img/2048Game.png" width="350" height="350">
+<img src="./img/2048Game.png" width="400" height="400">
 
 A Java/Javafx clone of the popular 2048 game with new features rotate and undo.
 

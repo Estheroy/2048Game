@@ -1,12 +1,12 @@
-# 2048 Game
+## 2048 Game
 
-<img src="./img/2048Game.png" width="250" height="250">
+<img src="./img/2048Game.png" width="350" height="350">
 
 A Java/Javafx clone of the popular 2048 game with new features rotate and undo.
 
 The Game logic flow is written in Java and GUI part is written in Javafx.
 
-# Usage: 
+## Usage: 
 
 1. Compile all the java files
     ***javac *.java***
@@ -43,7 +43,7 @@ The Game logic flow is written in Java and GUI part is written in Javafx.
    
    > **r** - Rotate the Board Clockwise
 
-# Screen Recording
+## Screen Recording
 
 ![](./img/2048.gif)
 

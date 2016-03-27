@@ -70,6 +70,9 @@ public class Board
   // declare a two dimensional array to store the value in the board
   private int[][] grid;
 
+  // the two-dimensional array to store the previous board
+  private int[][] prevGrid;
+
   // value to store the score of player
   private int score;
 
@@ -103,6 +106,7 @@ public class Board
     for(int i = 0; i < NUM_START_TILES; i++){
       addRandomTile();
     }
+    prevGrid = grid;
   }
 
   /** 
@@ -138,7 +142,9 @@ public class Board
         // entry of the board
         grid[row][column] = input.nextInt();
       }
-    } 
+    }
+
+    prevGrid = grid; 
   } 
 
   /** 
@@ -288,6 +294,59 @@ public class Board
 
   }
 
+
+  /**
+   * Method for checking if the board can be moved in a certain direction.
+   * If yes, then perform a move operation and add a random tile.
+   * @return return if the move is successful, else return false
+   */ 
+  public boolean moveAndAdd(Direction direction){
+
+    prevGrid = grid;
+
+    if (move(direction)){
+      addRandomTile();
+      return true;
+    }
+    return false;
+  }
+
+  /**
+   * Method for restoring the previous board
+   * @return void
+   */ 
+  public void undo(){
+
+    grid = prevGrid;
+  }
+
+  /**
+   * Method for rotating the board according to the inpur parameter
+   * @return void
+   */ 
+  public void rotate(boolean rotateClockwise) {
+
+    prevGrid = grid;
+    int[][] newBoard = new int[GRID_SIZE][GRID_SIZE];
+
+    if (rotateClockwise) {
+      for (int i = 0; i < GRID_SIZE; i++) {
+        for (int j = 0; j < GRID_SIZE; j++) {
+          newBoard[j][GRID_SIZE - 1 - i] = grid[i][j];
+        }
+      }
+
+      grid = newBoard;
+    } 
+    else {
+      for (int i = 0; i < GRID_SIZE; i++) {
+        for (int j = 0; j < GRID_SIZE; j++) {
+          newBoard[GRID_SIZE - 1 - j][i] = grid[i][j];
+        }
+      }
+      grid = newBoard;
+    }
+  }
 
   /** 
    * Method for determining if we can move in a given direction
@@ -660,6 +719,7 @@ public class Board
    */
   public boolean move(Direction direction){
 
+    prevGrid = grid;
     // declare a boolean 
     boolean result = false;
 

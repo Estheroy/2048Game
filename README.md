@@ -1,6 +1,6 @@
 # 2048 Game
 
-![alt tag](./img/2048Game.png)
+<img src="./img/2048Game.png" width="250" height="250">
 
 A Java/Javafx clone of the popular 2048 game with new features rotate and undo.
 

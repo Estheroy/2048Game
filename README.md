@@ -30,7 +30,7 @@ The Game logic flow is written in Java and GUI part is written in Javafx.
 
 3. Controls:
    
-   > ***For Command Line***
+   ***For Command Line***
    
    > **w** - Move Up
 
@@ -46,7 +46,8 @@ The Game logic flow is written in Java and GUI part is written in Javafx.
    
    > **r** - Rotate the Board Clockwise
    
-   > ***For GUI***
+   
+   ***For GUI***
       
    > **Arrow Key Up** - Move Up
 
@@ -67,6 +68,7 @@ The Game logic flow is written in Java and GUI part is written in Javafx.
 ![](./img/2048.gif)
 
 **Rotate**
+
 ![](./img/2048rotate.gif) 
 
 

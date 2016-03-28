@@ -13,9 +13,10 @@ The Game logic flow is written in Java and GUI part is written in Javafx.
 
 2. 
   
-  a) Play the 2048 Game with Java User Interface
+  a) Play the 2048 Game with Graphical User Interface
 
     ***java Gui2048 [ -i|-o|-s file]***
+    
 
   b) Play the 2048 Game with Command Line 
 
